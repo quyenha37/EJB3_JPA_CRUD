@@ -114,10 +114,10 @@ public class StudentEJB implements StudentEJBRemote {
 			
 			if(student != null){
 				
-				//entityManager.getTransaction().begin(); =>EJB already contain default transaction so no need to add this line
+				//entityManager.getTransaction().begin(); =>EJB already contains default transaction so no need to add this line
 				entityManager.remove(student);
 				//entityManager.remove(123);
-				//entityManager.getTransaction().commit(); =>EJB already contain default transaction so no need to add this line
+				//entityManager.getTransaction().commit(); =>EJB already contains default transaction so no need to add this line
 			}
 			
 			return true;
